@@ -1,0 +1,30 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.7.5, pytest-4.6.11, py-1.10.0, pluggy-0.13.1
+rootdir: /usr/src/app, inifile: pytest.ini
+plugins: xdist-1.22.1, vgw-test-utils-1.0.1097, cpe-sim-1.0.14, forked-1.3.0, flaky-3.5.2, elk-reporter-18.0.78, refapi-1.0.44, timeout-1.3.3, uxapi-1.0.61
+timeout: 450.0s
+timeout method: thread
+timeout func_only: False
+[1mcollecting ... [0m[1mcollected 8 items                                                              [0m
+
+tests/analytics/test_mandatory_logs.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+[33m=============================== warnings summary ===============================[0m
+/usr/local/lib/python3.7/site-packages/botocore/vendored/requests/packages/urllib3/_collections.py:1
+/usr/local/lib/python3.7/site-packages/botocore/vendored/requests/packages/urllib3/_collections.py:1
+  /usr/local/lib/python3.7/site-packages/botocore/vendored/requests/packages/urllib3/_collections.py:1: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+    from collections import Mapping, MutableMapping
+
+/usr/local/lib/python3.7/site-packages/_pytest/mark/structures.py:335
+  /usr/local/lib/python3.7/site-packages/_pytest/mark/structures.py:335: PytestUnknownMarkWarning: Unknown pytest.mark.household_params - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    PytestUnknownMarkWarning,
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+===Flaky Test Report===
+
+
+===End Flaky Test Report===
+[33m[1m==================== 8 passed, 3 warnings in 448.47 seconds ====================[0m
+NDS: ^21/01/09 08:03:48 !WARNING <p:1 w:standalone t:Thread-3 T:vgw_test_utils.tunneler M:tunneler.py F:serviceStopped FCID:e0ea526_2c76ad3_t_2 L:315 > disconnected from ssh
+NDS: ^21/01/09 08:03:48 !WARNING <p:1 w:standalone t:Thread-3 T:vgw_test_utils.tunneler M:tunneler.py F:serviceStopped FCID:e0ea526_2c76ad3_t_2 L:315 > disconnected from ssh
+NDS: ^21/01/09 08:03:48 !WARNING <p:1 w:standalone t:Thread-3 T:vgw_test_utils.tunneler M:tunneler.py F:serviceStopped FCID:e0ea526_2c76ad3_t_2 L:315 > disconnected from ssh
